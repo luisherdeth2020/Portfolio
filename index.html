@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="theme-color" content="#f0b530">
+		<meta name="theme-color" content="#f0b530" />
 		<title>Luis Herdeth</title>
 		<link rel="stylesheet" href="main.css" />
 		<!-- icons -->
@@ -24,14 +24,10 @@
 							</a>
 						</li>
 						<li class="nav__item">
-							<a href="#about" class="nav__link">
-								<i class="uil uil-user nav__icon"></i> About
-							</a>
+							<a href="#about" class="nav__link"> <i class="uil uil-user nav__icon"></i> About </a>
 						</li>
 						<li class="nav__item">
-							<a href="#skills" class="nav__link">
-								<i class="uil uil-file-alt nav__icon"></i> Skills
-							</a>
+							<a href="#skills" class="nav__link"> <i class="uil uil-file-alt nav__icon"></i> Skills </a>
 						</li>
 						<li class="nav__item">
 							<a href="#services" class="nav__link">
@@ -45,24 +41,23 @@
 						</li>
 						<li class="nav__item">
 							<a href="#contact" class="nav__link">
- 								<i class="uil uil-estate nav__icon"></i> Contact Me
+								<i class="uil uil-estate nav__icon"></i> Contact Me
 							</a>
 						</li>
 					</ul>
 					<i class="uil uil-times nav__close" id="nav-close"></i>
 				</div>
 				<div class="nav__btns">
-                <!--Theme change button-->
+					<!--Theme change button-->
 					<i class="uil uil-moon change-theme" id="theme-button"></i>
 
 					<div class="nav__toggle" id="nav-toggle">
 						<i class="uil uil-apps"></i>
 					</div>
-            	</div>
+				</div>
 			</nav>
 		</header>
-		
-		
+
 		<main class="main" id="main">
 			<section class="home" id="home">
 				<div class="home__container container grid">
@@ -114,58 +109,102 @@
 								>Contact Me<i class="uil uil-message btn--icon"></i
 							></a>
 						</article>
-                    </div>
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button btn--flex"
-                        ><i class="uil uil-mouse-alt home__scroll-mouse"></i
-                            ><span class="home__scroll-name">Scroll down</span><i class="uil uil-arrow-down uil-btn"></i>
-                        </a>
-                    </div>
+					</div>
+					<div class="home__scroll">
+						<a href="#about" class="home__scroll-button btn--flex"
+							><i class="uil uil-mouse-alt home__scroll-mouse"></i
+							><span class="home__scroll-name">Scroll down</span
+							><i class="uil uil-arrow-down uil-btn"></i>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="about" id="about">
+				<h2 class="about__title">About Me</h2>
+				<span class="about__subtitle"> My introduction </span>
+
+				<div class="about__container container grid">
+					<img src="me.jpg" alt="Luis Herdeth" class="about__img" />
+					<div class="about__resum">
+						<p class="about__description">
+							Web developer, with extensive knowledge and years of experience, working in web technologies
+							and Ui/Ux design, delivering quality work.
+						</p>
+						<div class="about__info">
+							<div>
+								<span class="about__info-title">02+</span>
+								<span class="about__info-name">Years <span>experience</span> </span>
+							</div>
+
+							<div>
+								<span class="about__info-title">02+</span>
+								<span class="about__info-name">Companies <span>worked</span> </span>
+							</div>
+
+							<div>
+								<span class="about__info-title">07+</span>
+								<span class="about__info-name">Completed <span>projects</span> </span>
+							</div>
+						</div>
+						<div class="about__cv">
+							<a download="" href="assets/pdf/Alexa-Cv.pdf" class="btn button--flex"
+								>Download CV <i class="uil uil-download-alt btn--icon"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="skills section" id="skills">
+				<h2 class="section__title">Skills</h2>
+				<span class="section__subtitle">My technical level</span>
+
+				<div class="skills__container container grid">
+					<!-- first Skill -->
+					<div class="skills__content skills__open">
+						<div class="skills__header">
+							<i class="uil uil-brackets-curly uil-btn"></i>
+
+							<div class="skills__header__left">
+								<h1 class="skill__title">Fronted Development</h1>
+								<span class="skills__subtitle">More than 1 year</span>
+							</div>
+							<i class="uil uil-angle-down skills__arrow uil-btn"></i>
+						</div>
+
+						<div class="skills__list grid">
+							<div class="skills__data">
+								<div class="skills__title">
+									<h3 class="skills__name">HTML5</h3>
+									<span class="skills__number">100%</span>
+								</div>
+								<div class="skills__bar">
+									<div class="skills__porcentage skills__react" id="skillHtml"></div>
+								</div>
+							</div>
+							<div class="skills__data">
+								<div class="skills__title">
+									<h3 class="skills__name">CSS3</h3>
+									<span class="skills__number">90%</span>
+								</div>
+								<div class="skills__bar">
+									<div class="skills__porcentage skills__react" id="skillCss"></div>
+								</div>
+							</div>
+							<div class="skills__data">
+								<div class="skills__title">
+									<h3 class="skills__name">Javascript</h3>
+									<span class="skills__number">50%</span>
+								</div>
+								<div class="skills__bar">
+									<div class="skills__porcentage skills__react" id="skillJs"></div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
-		<section class="about" id="about">
-			<h2 class="about__title">
-				About Me
-			</h2>
-			<span class="about__subtitle">
-				My introduction
-			</span>
-
-			<div class="about__container container grid">
-				<img src="me.jpg" alt="Luis Herdeth" class="about__img">
-				<div class="about__resum">
-					<p class="about__description">
-						Web developer, with extensive knowledge and years of experience, working in web
-                        technologies and Ui/Ux design, delivering quality work.
-					</p>
-					<div class="about__info">
-						<div >
-                            <span class="about__info-title">02+</span>
-                            <span class="about__info-name">Years <span>experience</span>  </span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">02+</span>
-                            <span class="about__info-name">Companies <span>worked</span>  </span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">07+</span>
-                            <span class="about__info-name">Completed <span>projects</span>  </span>
-                        </div>
-					</div>
-					<div class="about__cv">
-						<a download="" href="assets/pdf/Alexa-Cv.pdf" class="btn button--flex">Download CV <i class="uil uil-download-alt btn--icon"></i>
-                        </a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="skills section" id="skills">
-			<h2 class="skills__title">Skills</h2>
-            <span class="skills__subtitle">My technical level</span>
-		</section>
-		<script src="main.js" ></script>
+		<script src="main.js"></script>
 	</body>
 </html>
