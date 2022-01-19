@@ -1,528 +1,260 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#f0b530" />
+		<title>Luis Herdeth</title>
+		<link rel="stylesheet" href="main.css" />
+		<!-- icons -->
+		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+	</head>
+	<body>
+		<!--=============================== HEADER =============================-->
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="main.css" />
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-	<title>Booker</title>
-</head>
+		<header class="header" id="header">
+			<nav class="nav container">
+				<a href="#" class="nav__logo">Luis Herdeth</a>
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list grid">
+						<li class="nav__item">
+							<a href="#home" class="nav__link active-link">
+								<i class="uil uil-estate nav__icon"></i> Home
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#about" class="nav__link"> <i class="uil uil-user nav__icon"></i> About </a>
+						</li>
+						<li class="nav__item">
+							<a href="#skills" class="nav__link"> <i class="uil uil-file-alt nav__icon"></i> Skills </a>
+						</li>
+						<li class="nav__item">
+							<a href="#services" class="nav__link">
+								<i class="uil uil-briefcase-alt nav__icon"></i> Services
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#portfolio" class="nav__link">
+								<i class="uil uil-scenery nav__icon"></i> Portfolio
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#contact" class="nav__link">
+								<i class="uil uil-estate nav__icon"></i> Contact Me
+							</a>
+						</li>
+					</ul>
+					<i class="uil uil-times nav__close" id="nav-close"></i>
+				</div>
+				<div class="nav__btns">
+					<!--Theme change button-->
+					<i class="uil uil-moon change-theme" id="theme-button"></i>
 
-<body>
-	<header>
-		<div class="firstnav">
-			<nav>
-				<ul>
-					<li>
-						<a href="#">
-							<i class="fas fa-map-marker-alt"></i> Palma Via Italy</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fas fa-phone-alt"></i> +1 000263676</a>
-					</li>
-				</ul>
+					<div class="nav__toggle" id="nav-toggle">
+						<i class="uil uil-apps"></i>
+					</div>
+				</div>
 			</nav>
-			<ul>
-				<li class="follow-color">
-					<a href="#">Follow US:</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fab fa-facebook face"></i>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fab fa-twitter-square twitter"></i>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fab fa-google-plus gogle"></i>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fas fa-globe mundo"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<nav class="second_nav">
-			<a class="centrado" href="#">
-				<span class="logooo">B</span>ooker</a>
-			<span id="hamburger" class="hamburger">
-				<i class="fad fa-bars"></i>
-			</span>
-			<ul id="nav_hamburger" class="li_right">
-				<li class="link1">
-					<a href="#">Home</a>
-				</li>
-				<li>
-					<a href="#view">About</a>
-				</li>
-				<li>
-					<a href="#team">Team</a>
-				</li>
-				<li>
-					<a href="#contact">Contact</a>
-				</li>
-				<li>
-					<button>
-						<i class="fas fa-user"></i> Get Started</button>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<!-- h1 & photo -->
-	<div class="fondo1">
-		<section class="container">
-			<article class="article_first">
-				<h3>a vision for your life</h3>
-				<h1>
-					build your real &
-					<span class="break">dream home, at real
-						<span class="break">time</span>
-					</span>
-				</h1>
-				<p>Vertibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae: Nulla mollis dapibus nunc ut
-					rhoncus turpis sodales quis.</p>
-				<button>Read More</button>
-			</article>
-			<article class="article_second">
-				<img src="images/img.jpg" alt="" />
-			</article>
-		</section>
-	</div>
-	<button id="btop" onclick="topFunction()">
-		<i class="fas fa-angle-up"></i>
-	</button>
-	<!--
-		  -- ─── ABOUT ───────────────────────────────────────────────────────
-		  -->
-	<p class="center_p">about</p>
-	<h2 class="center_h2">Get eveything you need to pick the right Agent.</h2>
-	<section class="about">
-		<article class="about_first">
-			<span class="icono">
-				<i class="far fa-building"></i>
-			</span>
-			<h3>Modern Residence</h3>
-			<p>Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
-		</article>
-		<article class="about_second">
-			<span class="icono_hov">
-				<i class="fas fa-cogs"></i>
-			</span>
-			<h3>Development Services</h3>
-			<p>Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
-		</article>
-		<article class="about_third">
-			<span class="icono">
-				<i class="fas fa-cogs"></i>
-			</span>
-			<h3>Property Management</h3>
-			<p>Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
-		</article>
-	</section>
-	<p class="center_p">WHAT WE DO</p>
-	<h2 class="center_h2">Our Featured Services</h2>
-	<section class="wedo">
-		<article class="wedo_first">
-			<img id="mainImage" class="fondo2" src="images/img1.jpg" alt="" />
-		</article>
-		<article class="wedo_second">
-			<span class="icono">
-				<i class="far fa-hospital"></i>
-			</span>
-			<h3>For Renters</h3>
-			<p>Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
-			<span class="icono">
-				<i class="far fa-key-skeleton"></i>
-			</span>
-			<h3>For Developers</h3>
-			<p>Integer sit amet mattis quam, sit amet ultricies velit.convallis at tellus. Nulla quis lorem ipnut libero malesuada feugiat..</p>
-		</article>
-	</section>
-	<p class="center_p">VIEW OUR</p>
-	<h2 class="center_h2">Recent Properties</h2>
-	<section id="view" class="view">
-		<article class="view_first">
-			<img src="images/n10.jpg" id="leftImage" class="fondo2" alt="Casa 1" />
-			<h4 class="p08">Tittle goes here</h4>
-			<p class="p08">
-				<i class="fas fa-map-marker-alt"></i>123 Location. Example City</p>
-			<div class="view_first_cuadro">
-				<div class="view_first_cuadro1">
-					<p>
-						<i class="fas fa-bed"></i> 4 Bedrooms</p>
-					<p class="view_mgt">
-						<i class="far fa-building"></i> Sq Ft:3400</p>
-				</div>
-				<div class="view_first_cuadro2">
-					<p>
-						<i class="fas fa-shower"></i> 4 Bathrooms</p>
-					<p class="view_mgt">
-						<i class="far fa-building"></i> 1 Garage</p>
-				</div>
-			</div>
-			<!-- usser - any -->
-			<div class="view_first_cuadro3">
-				<p class="p08">
-					<i class="fas fa-user"></i> Jhon Doe</p>
-				<p class="p08">
-					<i class="far fa-calendar-alt"></i> 6 years ago</p>
-			</div>
-		</article>
-		<article class="view_second">
-			<img src="images/n11.jpg" class="centerr" alt="Casa 2" />
-			<h4 class="p08">Tittle goes here</h4>
-			<p class="p08">
-				<i class="fas fa-map-marker-alt"></i>123 Location. Example City</p>
-			<div class="view_first_cuadro">
-				<div class="view_first_cuadro1">
-					<p>
-						<i class="fas fa-bed"></i> 4 Bedrooms</p>
-					<p class="view_mgt">
-						<i class="far fa-building"></i> Sq Ft:3400</p>
-				</div>
-				<div class="view_first_cuadro2">
-					<p>
-						<i class="fas fa-shower"></i> 4 Bathrooms</p>
-					<p class="view_mgt">
-						<i class="far fa-building"></i> 1 Garage</p>
-				</div>
-			</div>
-			<!-- usser - any -->
-			<div class="view_first_cuadro3">
-				<p class="p08">
-					<i class="fas fa-user"></i> Jhon Doe</p>
-				<p class="p08">
-					<i class="far fa-calendar-alt"></i> 2 years ago</p>
-			</div>
-		</article>
-		<article class="view_three">
-			<img src="images/n12.jpg" class="ani-right" alt="Casa 3" />
-			<h4 class="p08">Tittle goes here</h4>
-			<p class="p08">
-				<i class="fas fa-map-marker-alt"></i>123 Location. Example City</p>
-			<div class="view_first_cuadro">
-				<div class="view_first_cuadro1">
-					<p>
-						<i class="fas fa-bed"></i> 4 Bedrooms</p>
-					<p class="view_mgt">
-						<i class="far fa-building"></i> Sq Ft:3400</p>
-				</div>
-				<div class="view_first_cuadro2">
-					<p>
-						<i class="fas fa-shower"></i> 4 Bathrooms</p>
-					<p class="view_mgt">
-						<i class="far fa-building"></i> 1 Garage</p>
-				</div>
-			</div>
-			<!-- usser - any -->
-			<div class="view_first_cuadro3">
-				<p class="p08">
-					<i class="fas fa-user"></i> Jhon Doe</p>
-				<p class="p08">
-					<i class="far fa-calendar-alt"></i> 6 years ago</p>
-			</div>
-		</article>
-	</section>
-	<div class="fondo3">
-		<section class="contador">
-			<article class="contador_first">
-				<h3>1100</h3>
-				<p>Suport</p>
-			</article>
-			<article class="contador_second">
-				<h3>1700</h3>
-				<p>Happy Hours</p>
-			</article>
-			<!-- <div class="contador_2col"> -->
-			<article class="contador_three">
-				<h3>11900</h3>
-				<p>Trusted Agents</p>
-			</article>
-			<article class="contador_four">
-				<h3>157</h3>
-				<p>Cups of Coffee</p>
-			</article>
-			<!-- </div> -->
-		</section>
-	</div>
-	<p class="center_p">AMAZING PEOPLE</p>
-	<h2 class="center_h2">Professional Agents</h2>
-	<!--
-		  -- ─── AGENTES ─────────────────────────────────────────────────────
-		  -->
-	<section id="team" class="agents">
-		<article class="agents_first">
-			<img src="images/team.jpg" alt="team" />
-			<span class="agent_cblue">Agent</span>
-			<h3>Jason Donoghue</h3>
-			<p>Lorem Ipsum has been the industry's standard since the 1500s.</p>
-			<ul class="agents_redes">
-				<li class="facebook">
-					<button>
-						<i class="fab fa-facebook-f"></i>
-						<a href="https://www.facebook.com/wikispain/" target="_blank">Facebook</a>
-					</button>
-				</li>
-				<li class="twitter">
-					<button>
-						<i class="fab fa-twitter"></i>
-						<a href="https://www.facebook.com/wikispain/" target="_blank">Facebook</a>
-					</button>
-				</li>
-			</ul>
-		</article>
-		<article class="agents_second">
-			<img src="images/team1.jpg" alt="Team 1" />
-			<span class="agent_cblue">Agent</span>
-			<h3>Mariana Noe</h3>
-			<p>Lorem Ipsum has been the industry's standard since the 1500s.</p>
-			<ul class="agents_redes">
-				<li class="googleplus">
-					<button>
-						<i class="fab fa-google-plus-g"></i>
-						<a href="https://www.facebook.com/wikispain/" target="_blank">google</a>
-					</button>
-				</li>
-				<li class="linkedin">
-					<button>
-						<i class="fab fa-linkedin-in"></i>
-						<a href="https://www.facebook.com/wikispain/" target="_blank">linkedin</a>
-					</button>
-				</li>
-			</ul>
-		</article>
-		<article class="agents_third">
-			<img src="images/team2.jpg" alt="Team 2" />
-			<span class="agent_cblue">Agent</span>
-			<h3>Daniel Doe</h3>
-			<p>Lorem Ipsum has been the industry's standard since the 1500s.</p>
-			<ul class="agents_redes">
-				<li class="facebook">
-					<button>
-						<i class="fab fa-facebook-f"></i>
-						<a href="https://www.facebook.com/wikispain/" target="_blank">Facebook</a>
-					</button>
-				</li>
-				<li class="twitter">
-					<button>
-						<i class="fab fa-twitter"></i>
-						<a href="https://www.facebook.com/wikispain/" target="_blank">Facebook</a>
-					</button>
-				</li>
-			</ul>
-		</article>
-	</section>
-	<div id="contact" class="fondo4">
-		<section class="our">
-			<article class="our_first">
-				<h2>
-					This is Our
-					<span class="break">Responsibility To Give</span>
-					<span></span>Good Property
-				</h2>
-				<p class="our_first_one">
-					Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus
-					turpis sodales quis.Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.
-				</p>
-				<p class="our_first_two">Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
-			</article>
-			<article class="our_second">
-				<img src="images/img3.jpg" alt="Imagen 3" />
-			</article>
-		</section>
-		<section class="foot">
-			<article class="foot_first">
-				<h3>Address</h3>
-				<p>Address : 1234 lock, Charlotte, North
-					<span class="break">Carolina, United States</span>
-				</p>
-				<p>Phone : +12 534894364</p>
-				<p>Email : info@example.com</p>
-				<p>Fax : +12 534894364</p>
-			</article>
-			<article class="foot_second">
-				<h3>Quick Links</h3>
-				<div class="foot_second_colum">
-					<div class="foot_second_art1">
-						<ul>
-							<li>
-								<a href="#">Why Choose Us</a>
-							</li>
-							<li>
-								<a href="#">Overview</a>
-							</li>
-							<li>
-								<a href="#">Services</a>
-							</li>
-							<li>
-								<a href="#">Gallery</a>
-							</li>
-							<li>
-								<a href="#">Contact</a>
-							</li>
-						</ul>
+		</header>
+
+		<main class="main" id="main">
+			<section class="home" id="home">
+				<div class="home__container container grid">
+					<div class="home__section grid">
+						<article class="icons">
+							<ul>
+								<li>
+									<a href="#"><i class="uil uil-linkedin-alt uil-btn"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="uil uil-instagram uil-btn"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="uil uil-github-alt uil-btn"></i></a>
+								</li>
+							</ul>
+						</article>
+						<aticle class="iam">
+							<svg
+								class="iam__luis"
+								viewBox="0 0 200 187"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+							>
+								<mask id="mask0" mask-type="alpha">
+									<path
+										d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+									/>
+								</mask>
+								<g mask="url(#mask0)">
+									<path
+										d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+									/>
+									<image class="iam__luis-img" x="18" y="6" xlink:href="yop.png" />
+								</g>
+							</svg>
+						</aticle>
+						<article class="about article">
+							<h1 class="article__title">Hi, I'am Luis</h1>
+							<h2 class="article__subtitle">Fronted developer</h2>
+							<p>High level experience in web application development and producing quality work.</p>
+							<a href="#contact" class="btn btn--flex"
+								>Contact Me<i class="uil uil-message btn--icon"></i
+							></a>
+						</article>
 					</div>
-					<div class="foot_second_art2">
-						<ul>
-							<li>
-								<a href="#">Privacy Policy</a>
-							</li>
-							<li>
-								<a href="#">General Terms</a>
-							</li>
-							<li>
-								<a href="#">Faq's</a>
-							</li>
-							<li>
-								<a href="#">Knowledge</a>
-							</li>
-							<li>
-								<a href="#">Forum</a>
-							</li>
-						</ul>
+					<div class="home__scroll">
+						<a href="#about" class="home__scroll-button btn--flex"
+							><i class="uil uil-mouse-alt home__scroll-mouse"></i
+							><span class="home__scroll-name">Scroll down</span
+							><i class="uil uil-arrow-down uil-btn"></i>
+						</a>
 					</div>
 				</div>
-			</article>
-			<article class="foot_third">
-				<h3>Newsletter</h3>
-				<p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
-				<form action="#" method="post">
-					<input type="email" name="Email" placeholder="Enter your email..." required />
-					<button class="btn1">
-						<span class="far fa-paper-plane"></span>
-					</button>
-				</form>
-			</article>
-		</section>
-	</div>
-	<div class="fondo5">
-		<footer>
-			<h5>
-				© 2018 Booker. All rights reserved | Design by
-				<span class="breakfooter">
-					<a href="https://github.com/wikiesp">Luis Herdeth</a>
-				</span>
-				<!-- <button class="#btop" onclick="topFunction()"><i class="far fa-arrow-square-up"></i></button> -->
-			</h5>
-		</footer>
-	</div>
-	<!-- <script src="app.js"></script> -->
-	<script>
-		window.addEventListener('scroll', () => {
-			let currentPosition = document.documentElement.scrollTop;
+			</section>
 
-			const elements = {
-				scrollDown: {
-					// classes for scroll down, id is on the left and class is on the right
-					mainImage: 'left-to-right-main',
-					leftImage: 'left-to-right',
-					centerImage: 'down-to-up',
-					rightImage: 'rigth-to-down',
-				},
-				scrollUp: {
-					// classes for scroll up
-					mainImage: 'right-to-left-main',
-					leftImage: 'right-to-left',
-					centerImage: 'up-to-down',
-					rightImage: 'left-to-right',
-				},
-			};
-			// Object.keys => Devuelve en array
-			Object.keys(elements.scrollDown).forEach((idScroll) => {
-				console.log(currentPosition);
-				//offsetTop => retorna distancia del elemento actual respecto al borde superior
-				if (document.getElementById(idScroll).offsetTop - 600 < currentPosition) {
+			<section class="about" id="about">
+				<h2 class="about__title">About Me</h2>
+				<span class="about__subtitle"> My introduction </span>
 
-					console.log(currentPosition);
-					console.log(idScroll);
+				<div class="about__container container grid">
+					<img src="me.jpg" alt="Luis Herdeth" class="about__img" />
+					<div class="about__resum">
+						<p class="about__description">
+							Web developer, with extensive knowledge and years of experience, working in web technologies
+							and Ui/Ux design, delivering quality work.
+						</p>
+						<div class="about__info">
+							<div>
+								<span class="about__info-title">02+</span>
+								<span class="about__info-name">Years <span>experience</span> </span>
+							</div>
 
-					document.getElementById(idScroll).classList.add(elements.scrollDown[idScroll]);
-					document.getElementById(idScroll).classList.remove(elements.scrollUp[idScroll]);
-				}
-				else {
-					document.getElementById(idScroll).classList.add(elements.scrollUp[idScroll]);
-					document.getElementById(idScroll).classList.remove(elements.scrollDown[idScroll]);
+							<div>
+								<span class="about__info-title">02+</span>
+								<span class="about__info-name">Companies <span>worked</span> </span>
+							</div>
 
-				}
-			});
-		});
-	</script>
-	<!-- <script>
-			//direction constants
-			let rightToLeft = 1;
-			let leftToRight = 2;
-			let center = 3;
+							<div>
+								<span class="about__info-title">07+</span>
+								<span class="about__info-name">Completed <span>projects</span> </span>
+							</div>
+						</div>
+						<div class="about__cv">
+							<a download="" href="assets/pdf/Alexa-Cv.pdf" class="btn button--flex"
+								>Download CV <i class="uil uil-download-alt btn--icon"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="skills section" id="skills">
+				<h2 class="section__title">Skills</h2>
+				<span class="section__subtitle">My technical level</span>
 
-			// DOM
-			function moveElement(name, direction) {
-				// takes every element that contains the class `name`
-				let animacion = document.querySelectorAll(name);
-				console.log(animacion);
-				const showScroll = () => {
-					let scrollTop = document.documentElement.scrollTop;
+				<div class="skills__container container grid">
+					<!-- first Skill -->
+					<div class="skills__content skills__open">
+						<div class="skills__header">
+							<i class="uil uil-brackets-curly uil-btn"></i>
 
-					for (let i = 0; i < animacion.length; i++) {
-						const imgAltura = animacion[i].offsetTop;
-						if (imgAltura - 600 < scrollTop) {
-							let movementName = direction;
-							switch (direction) {
-								case leftToRight:
-									movementName = 'mover';
-									break;
-								case rightToLeft:
-									movementName = 'mover_right';
-									break;
+							<div class="skills__header__title">
+								<h1 class="skill__title">Fronted Development</h1>
+								<span class="skills__subtitle">More than 1 year</span>
+							</div>
+							<i class="uil uil-angle-down skills__arrow uil-btn"></i>
+						</div>
 
-								default:
-									movementName = 'center';
-							}
-							// let movementName = direction == leftToRight ? 'mover' : 'mover_right'
-							animacion[i].style.animation = movementName + ' 1s ease';
-							animacion[i].style.opacity = 1;
-						}
-					}
-				};
+						<div class="skills__list grid">
+							<div class="skills__data">
+								<div class="skills__title">
+									<h3 class="skills__name">HTML5</h3>
+									<span class="skills__number">100%</span>
+								</div>
+								<div class="skills__bar">
+									<div class="porcentaje skills__react" id="skillHtml"></div>
+								</div>
+							</div>
+							<div class="skills__data">
+								<div class="skills__title">
+									<h3 class="skills__name">CSS3</h3>
+									<span class="skills__number">90%</span>
+								</div>
+								<div class="skills__bar">
+									<div class="porcentaje skills__css" id="skillCss"></div>
+								</div>
+							</div>
+							<div class="skills__data">
+								<div class="skills__title">
+									<h3 class="skills__name">Javascript</h3>
+									<span class="skills__number">50%</span>
+								</div>
+								<div class="skills__bar">
+									<div class="porcentaje skills__js" id="skillJs"></div>
+								</div>
+							</div>
+							<div class="skills__data">
+								<div class="skills__title">
+									<h3 class="skills__name">Sass</h3>
+									<span class="skills__number">50%</span>
+								</div>
+								<div class="skills__bar">
+									<div class="porcentaje skills__sass" id="sass"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="skills__content skills__close">
+						<div class="skills__header">
+							<i class="uil uil-brackets-curly uil-btn"></i>
 
-				return showScroll;
-			}
+							<div class="skills__header__title">
+								<h1 class="skill__title">Frameworks</h1>
+								<span class="skills__subtitle">More than 1 year</span>
+							</div>
+							<i class="uil uil-angle-down skills__arrow uil-btn"></i>
+						</div>
 
-			let elements = [
-				['.fondo2', leftToRight],
-				['.ani-right', rightToLeft],
-				['.centerr', center],
-			];
-
-			// calls moveElement per image that should be moved
-			elements.forEach((element) => window.addEventListener('scroll', moveElement(element[0], element[1])));
-
-			// Para saber cuando ha terminado la animacion
-			// imagen.addEventListener('animationed', (e) => {
-			// 	imagen.classList.remove('.fondo2');
-			// 	imagen.classList.add('.fondo2');
-			// });
-
-			let animado = document.querySelectorAll('.fondo2');
-			const mostrarScroll = () => {
-				let scrollTop = document.documentElement.scrollTop;
-				for (let index = 0; index < animado.length; index++) {
-					const alturaAnimado = animado[index].offsetTop;
-					if (alturaAnimado - 500 < scrollTop) {
-						animado[i].style.opacity = 1;
-					}
-				}
-			};
-			window.addEventListener('scroll', mostrarScroll);
-		</script> -->
-</body>
-
+						<div class="skills__list grid">
+							<div class="skills__data">
+								<div class="skills__title">
+									<h3 class="skills__name">Bootstrap</h3>
+									<span class="skills__number">80%</span>
+								</div>
+								<div class="skills__bar">
+									<div class="porcentaje skills__git" id="skillGit"></div>
+								</div>
+							</div>
+							<div class="skills__data">
+								<div class="skills__title">
+									<h3 class="skills__name">Tailwindcss</h3>
+									<span class="skills__number">60%</span>
+								</div>
+								<div class="skills__bar">
+									<div class="porcentaje skills__mysql" id="skillMysql"></div>
+								</div>
+							</div>
+							<div class="skills__data">
+								<div class="skills__title">
+									<h3 class="skills__name">React</h3>
+									<span class="skills__number">50%</span>
+								</div>
+								<div class="skills__bar">
+									<div class="porcentaje skills__mysql" id="skillbb"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="main.js"></script>
+	</body>
 </html>
-<!-- D:\PActiva-css\bootstrap_tutorial\web-portfolio
- -->

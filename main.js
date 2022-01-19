@@ -135,8 +135,12 @@ window.addEventListener('scroll', () => {
 		scrollDown: {
 			// classes for scroll down, id is on the left and class is on the right
 			skillHtml: 'skills__react',
-			skillCss: 'skills__react',
-			skillJs: 'skills__react',
+			skillCss: 'skills__css',
+			skillJs: 'skills__js',
+			sass: 'skills__sass',
+			skillGit: 'skills__git',
+			skillMysql: 'skills__mysql',
+			skillbb:'skills__mysql',
 		},
 	};
 	// Object.keys => Devuelve en array
@@ -149,3 +153,21 @@ window.addEventListener('scroll', () => {
 		}
 	});
 });
+
+// skills
+
+const skillsHeader = document.querySelectorAll('.skills__header');
+const skillsContent = document.getElementsByClassName('skills__content');
+
+skillsHeader.forEach((skill) => {
+	skill.addEventListener('click', function(){
+		let itemClass = this.parentNode.className;
+		for (i = 0; i < skillsContent.length; i++) {
+			skillsContent[i].className = 'skills__content skills__close';
+		}
+		if (itemClass === 'skills__content skills__close') {
+			this.parentNode.className = 'skills__content skills__open';
+		}
+	});
+});
+
