@@ -173,6 +173,16 @@ span {
 	font-weight: var(--font-medium);
 	padding: 1rem;
 }
+.btn--svg{
+	fill:var(--first-color);
+}
+/* svg{
+
+	font-size: 1.2rem;
+} */
+.nav--btn {
+	font-size: 1.2rem;
+}
 .btn--icon {
 	font-size: 1.25rem;
 	margin-left: var(--mb-0-5);
@@ -204,6 +214,7 @@ span {
 	bottom: 0;
 	position: fixed;
 	width: 100%;
+	z-index: 1;
 }
 .scroll-header {
 	box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.15);
@@ -233,11 +244,14 @@ span {
 .nav__link {
 	align-items: center;
 	color: var(--title-color);
+	font-size: var(--small-font-size);
 	display: flex;
 	flex-direction: column;
+	font-weight: var(--font-medium);
 }
 .active-link {
 	color: var(--first-color);
+	fill: var(--first-color);
 }
 .nav__close {
 	color: var(--first-color);
@@ -261,20 +275,14 @@ span {
 	/* background-color: rgba(192, 134, 134, 0.212); */
 }
 
-.about__title,
-.about__subtitle,
-.section__title,
-.section__subtitle {
-	text-align: center;
-}
-.about__title,
 .section__title {
 	font-size: var(--h1-font-size);
+	text-align: center;
 }
-.about__subtitle,
 .section__subtitle {
 	font-size: var(--small-font-size);
 	margin-bottom: var(--mb-3);
+	text-align: center;
 }
 
 .about__img {
@@ -358,7 +366,7 @@ span.skills__subtitle {
 .skills__bar {
 	background-color: var(--first-color-lighter);
 }
-.skills__react {
+.skills__html {
 	width: 100%;
 	animation: progress 5s forwards;
 	-webkit-animation: progress 5s forwards;
@@ -381,17 +389,41 @@ span.skills__subtitle {
 	animation: progress 5s forwards;
 	-webkit-animation: progress 5s forwards;
 }
+.skills__bootstrap {
+	width: 100%;
+	animation: progress 5s forwards;
+	-webkit-animation: progress 5s forwards;
+}
+.skills__tailwind {
+	width: 80%;
+	animation: progress 5s forwards;
+	-webkit-animation: progress 5s forwards;
+}
+.skills__react {
+	width: 60%;
+	animation: progress 5s forwards;
+	-webkit-animation: progress 5s forwards;
+}
 .skills__git {
 	width: 80%;
 	animation: progress 5s forwards;
 	-webkit-animation: progress 5s forwards;
 }
-.skills__mysql {
+.skills__figma {
 	width: 60%;
 	animation: progress 5s forwards;
 	-webkit-animation: progress 5s forwards;
 }
-
+.skills__xd {
+	width: 60%;
+	animation: progress 5s forwards;
+	-webkit-animation: progress 5s forwards;
+}
+.skills__photoshop {
+	width: 50%;
+	animation: progress 5s forwards;
+	-webkit-animation: progress 5s forwards;
+}
 
 @keyframes progress {
 	0% {

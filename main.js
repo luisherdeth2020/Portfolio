@@ -134,13 +134,17 @@ window.addEventListener('scroll', () => {
 	const elements = {
 		scrollDown: {
 			// classes for scroll down, id is on the left and class is on the right
-			skillHtml: 'skills__react',
+			skillHtml: 'skills__html',
 			skillCss: 'skills__css',
 			skillJs: 'skills__js',
 			sass: 'skills__sass',
-			skillGit: 'skills__git',
-			skillMysql: 'skills__mysql',
-			skillbb:'skills__mysql',
+			skillsBootstrap: 'skills__bootstrap',
+			skillsTailwind: 'skills__tailwind',
+			skillsReact: 'skills__react',
+			skillsGit: 'skills__git',
+			skillsFigma:'skills__figma',
+			skillsXd: 'skills__xd',
+			skillsPhotoshop: 'skills__photoshop',
 		},
 	};
 	// Object.keys => Devuelve en array
@@ -160,7 +164,7 @@ const skillsHeader = document.querySelectorAll('.skills__header');
 const skillsContent = document.getElementsByClassName('skills__content');
 
 skillsHeader.forEach((skill) => {
-	skill.addEventListener('click', function(){
+	skill.addEventListener('click', function () {
 		let itemClass = this.parentNode.className;
 		for (i = 0; i < skillsContent.length; i++) {
 			skillsContent[i].className = 'skills__content skills__close';
@@ -170,4 +174,3 @@ skillsHeader.forEach((skill) => {
 		}
 	});
 });
-
