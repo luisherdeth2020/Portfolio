@@ -219,6 +219,7 @@ puntito.forEach((cadaPunto, i) => {
 		grande.style.transform = `translateX(${operacion}%)`;
 
 		puntito.forEach((cadaPunto, i) => {
+			console.log(puntito)
 			punto[i].classList.remove('activo');
 		});
 		punto[i].classList.add('activo');

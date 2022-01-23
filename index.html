@@ -529,30 +529,27 @@
 								xmlns="http://www.w3.org/2000/svg"
 								width="34"
 								height="34"
-								viewBox="0 0 24 24"
-							>
+								viewBox="0 0 24 24">
 								<path
 									d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"
 								></path>
 							</svg>
 						</div>
 						<div class="grande">
-							<div class="tituloParrafo tituloParrafo--desktop">
+							<div class="tituloParrafo">
 								<img src="portfolio1.jpg" alt="Imagen 1" class="img" />
 
-								<!-- <h3>Modern Website</h3> -->
 								<div class="ptito">
 									<h3 class="portfolio__title">Modern Website</h3>
 									<p class="portfolio__description">This is test description(1) right now..</p>
 								</div>
-								<!-- <p>This is test description(1) right now.</p> -->
 							</div>
 
-							<div class="tituloParrafo tituloParrafo--desktop">
+							<div class="tituloParrafo">
 								<img src="portfolio2.jpg" alt="Imagen 2" class="img" />
 								<div class="ptito">
 									<h3 class="portfolio__title">Modern Website</h3>
-									<p class="portfolio__description">This is test description(1) right now..</p>
+									<p class="portfolio__description">This is test description(2) right now..</p>
 								</div>
 							</div>
 						</div>
@@ -562,11 +559,9 @@
 								xmlns="http://www.w3.org/2000/svg"
 								width="34"
 								height="34"
-								viewBox="0 0 24 24"
-							>
+								viewBox="0 0 24 24">
 								<path
-									d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-								></path>
+									d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
 							</svg>
 						</div>
 						<ul class="puntos">
@@ -603,7 +598,7 @@
 							<a class="btn--flex contact__talk--link" href="mailto:luis.herdeth@gmail.com"
 								>Write me
 								<svg
-									class="puntito"
+									class="contact__arrow"
 									xmlns="http://www.w3.org/2000/svg"
 									width="18"
 									height="18"
@@ -639,7 +634,7 @@
 								target="_blank"
 								>Write me
 								<svg
-									class="puntito"
+									class="contact__arrow"
 									xmlns="http://www.w3.org/2000/svg"
 									width="18"
 									height="18"
@@ -672,7 +667,7 @@
 							<a class="btn--flex contact__talk--link" href="tel:678241077"
 								>Call Me
 								<svg
-									class="puntito"
+									class="contact__arrow"
 									xmlns="http://www.w3.org/2000/svg"
 									width="18"
 									height="18"
@@ -686,26 +681,29 @@
 						</div>
 					</div>
 					<div class="contact__form">
-						<div class="contact__form--section">
-							<label for="" class="contact__form--tag">Names</label>
-							<input type="text" placeholder="Insert your name" class="contact__form--input" />
-						</div>
-						<div class="contact__form--section">
-							<label for="" class="contact__form--tag">Mail</label>
-							<input type="email" placeholder="Insert your email" class="contact__form--input" />
-						</div>
-						<div class="contact__form--section contact__form--area">
-							<label for="" class="contact__form--tag">Message</label>
-							<textarea
-								name=""
+						<form id="contact-form" action="process.php" method="post" role="form">
+
+							<div class="contact__form--section">
+								<label for="" class="contact__form--tag">Names</label>
+								<input name="name" type="text" placeholder="Insert your name" class="contact__form--input" />
+							</div>
+							<div class="contact__form--section">
+								<label for="" class="contact__form--tag">Mail</label>
+								<input name="email" type="email" placeholder="Insert your email" class="contact__form--input" />
+							</div>
+							<div class="contact__form--section contact__form--area">
+								<label for="" class="contact__form--tag">Message</label>
+								<textarea
+								name="message"
 								id=""
 								cols="30"
 								rows="10"
 								placeholder="Write your message"
 								class="contact__form--input"
-							></textarea>
-						</div>
-						<a class="btn">Send Message</a>
+								></textarea>
+							</div>
+							<a class="btn" type="submit" id="submit">Send Message</a>
+						</form>
 					</div>
 				</div>
 			</section>
