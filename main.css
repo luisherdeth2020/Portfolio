@@ -71,6 +71,7 @@ body.dark-theme {
 .nav__toggle {
 	align-items: center;
 	display: flex;
+	margin-left: .5rem;
 }
 * {
 	box-sizing: border-box;
@@ -242,6 +243,7 @@ span {
 .nav__logo {
 	color: var(--title-color);
 	font-weight: var(--font-medium);
+	font-size: var(--h2-font-size);
 }
 .nav__btns {
 	align-items: center;
@@ -262,7 +264,6 @@ span {
 	display: flex;
 	flex-direction: column;
 	fill: var(--title-color);
-	font-size: var(--small-font-size);
 	font-weight: var(--font-medium);
 }
 .active-link {
@@ -477,7 +478,7 @@ span.skills__subtitle {
 	width: 265px;
 	min-height: 10vh;
 	overflow: hidden;
-	/* margin-right: 7rem; */
+	margin-left: 1rem;
 }
 
 .carrusel .puntos {
@@ -624,8 +625,21 @@ span.skills__subtitle {
 	width: 0.5rem;
 	background-color: var(--body-color);
 	border-radius: 0.5rem;
+	-webkit-border-radius: 0.5rem;
+	-moz-border-radius: 0.5rem;
+	-ms-border-radius: 0.5rem;
+	-o-border-radius: 0.5rem;
 }
 
+::-webkit-scrollbar-track {
+	width: 0.5rem;
+	background-color: var(--body-color);
+	border-radius: 0.5rem;
+	-webkit-border-radius: 0.5rem;
+	-moz-border-radius: 0.5rem;
+	-ms-border-radius: 0.5rem;
+	-o-border-radius: 0.5rem;
+}
 ::-webkit-scrollbar-thumb {
 	background-color: var(--first-color);
 	border-radius: 0.5rem;
@@ -659,17 +673,15 @@ span.skills__subtitle {
 	transform: rotate(-180deg);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
 	.about {
 		text-align: left;
 	}
 
 	.puntito {
-		height: 24px;
-		width: 24px;
+		height: 30px;
+		width: 30px;
 	}
-}
-@media screen and (max-width: 480px) {
 	.tituloParrafo {
 		display: block;
 		/* margin-left: 0.5rem; */
@@ -679,6 +691,7 @@ span.skills__subtitle {
 	}
 	.carrusel .img {
 		margin-right: 7rem;
+		margin-left: .5rem;
 	}
 	.section {
 		padding: 2rem 0 4rem;
@@ -687,10 +700,16 @@ span.skills__subtitle {
 		grid-template-columns: repeat(1, 1fr);
 	}
 	.contact__talk {
-	display: grid;
-	gap: 1rem;
-	margin-top: 0rem;
-}
+		display: grid;
+		gap: 1rem;
+		margin-top: 0rem;
+	}
+	.nav__link{
+		font-size:var(--small-font-size);
+	}
+	.nav__logo{
+		font-size: var(--h3-font-size);
+	}
 }
 @media screen and (min-width: 568px) {
 	.home__section {
@@ -746,6 +765,9 @@ span.skills__subtitle {
 		margin-right: auto;
 		align-items: center;
 	}
+	.home__scroll {
+		margin-left: 2.5rem;
+	}
 	.nav__toggle {
 		display: none;
 	}
@@ -764,4 +786,22 @@ span.skills__subtitle {
 	.icons {
 		transform: translateX(-6rem);
 	}
+}
+
+/**----------------------------------------------
+ *                HIDE
+ *  
+ *  
+ *  
+ *  
+ *---------------------------------------------**/
+
+.hide {
+	display: none;
+}
+.themeIcon {
+	cursor: pointer;
+}
+.themeIcon:hover {
+	fill: var(--first-color);
 }
