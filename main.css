@@ -9,10 +9,13 @@
 	--hue-color: 45;
 	/* --first-color:hsl(var(--hue-color), 86%, 56%); */
 	--first-color: hsl(var(--hue-color), 86%, 56%);
+
 	--first-color-lighter: hsl(var(--hue-color), 92%, 85%);
 	--first-color-second: hsl(var(--hue-color), 86%, 56%);
 	/* --first-color: hsl(var(--hue-color), 69%, 61%); */
 	--body-color: hsl(var(--hue-color), 60%, 99%);
+	--scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+	/* --scroll-bar-color: RED; */
 
 	--body-font: 'Poppins', sans-serif;
 	--big-font-size: 2rem;
@@ -600,6 +603,32 @@ span.skills__subtitle {
 #submit{
 	cursor: pointer;
 }
+
+/**----------------------------------------------
+ *                SCROLL BAR
+ *  
+ *  
+ *  
+ *  
+ *---------------------------------------------**/
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color: var(--body-color);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: var(--first-color);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+
+
 @keyframes progress {
 	0% {
 		opacity: 1;
