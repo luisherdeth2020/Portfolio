@@ -281,13 +281,6 @@ span {
  *  
  *  
  *------------------------------------------------------------------------**/
-#about,
-#main,
-#skills,
-#portfolio {
-	padding: 2rem 0 4rem;
-	/* background-color: rgba(192, 134, 134, 0.212); */
-}
 
 .section__title {
 	font-size: var(--h1-font-size);
@@ -438,7 +431,9 @@ span.skills__subtitle {
 	animation: progress 5s forwards;
 	-webkit-animation: progress 5s forwards;
 }
-
+a:active{
+	background-color: none;
+}
 /**-----------------------
  *       SLIDER
  *  
@@ -716,12 +711,13 @@ span.skills__subtitle {
 	.ptito {
 		margin: 0 3rem;
 	}
+	.section{
+
+		padding:6rem 0 2rem;
+	}
 }
 @media screen and (min-width: 1024px) {
 	.icons {
 		transform: translateX(-6rem);
 	}
-	.home {
-		padding: 6rem 0 2rem;
 	}
-}
