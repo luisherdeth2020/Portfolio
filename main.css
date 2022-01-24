@@ -296,7 +296,6 @@ span {
 	border-radius: 0.5rem;
 	/* center image grid */
 	justify-self: center;
-	width: 200px;
 }
 .about__description,
 .about__info {
@@ -641,8 +640,6 @@ a:active{
 @media screen and (max-width:480px){
 	.tituloParrafo{
 		display: block;
-	}.about__img{
-		width: 250px;
 	}
 }
 @media screen and (min-width: 568px) {
