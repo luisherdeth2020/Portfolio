@@ -120,7 +120,6 @@ ul {
 	transition: 0.3s;
 }
 .iam__luis {
-	border-radius: red;
 	fill: var(--first-color);
 	width: 175px;
 }
@@ -140,7 +139,7 @@ a {
 }
 .btn--button{
 	border:none;
-	font-family: var(--body-color);
+	font-family: var(--body-font);
 	font-size: var(--normal-font-size);
 }
 img {
@@ -430,9 +429,7 @@ span.skills__subtitle {
 	animation: progress 5s forwards;
 	-webkit-animation: progress 5s forwards;
 }
-a:active{
-	background-color: none;
-}
+
 /**-----------------------
  *       SLIDER
  *  
@@ -451,16 +448,18 @@ a:active{
 }
 .carrusel .grande {
 	align-items: center;
-	/* background-color: orange; */
-
-	/* padding: 2em; */
-	display: flex;
+	/*background-color: orange;
+	*//*padding: 2em;
+	*/display: flex;
 	justify-content: space-between;
 	transform: translate(0%);
-
-	transition: all 0.5 ease;
+	transition: all 0.5s ease;
 	width: 200%;
 	overflow: hidden;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 }
 .carrusel .img {
 	border-radius: 2rem;
