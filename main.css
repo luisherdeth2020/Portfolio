@@ -266,9 +266,8 @@ span {
 	fill: var(--first-color);
 }
 .nav__close {
-	color: var(--first-color);
+	fill: var(--first-color);
 	cursor: pointer;
-	font-size: var(--h1-font-size);
 	position: absolute;
 	right: 1.3rem;
 }
