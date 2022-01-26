@@ -14,6 +14,7 @@
 	--first-color-second: hsl(var(--hue-color), 86%, 56%);
 	/* --first-color: hsl(var(--hue-color), 69%, 61%); */
 	--body-color: hsl(var(--hue-color), 60%, 99%);
+	--first-color-up: hsl(var(--hue-color), 57%, 53%);
 	--scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
 	/* --scroll-bar-color: RED; */
 
@@ -71,7 +72,7 @@ body.dark-theme {
 .nav__toggle {
 	align-items: center;
 	display: flex;
-	margin-left: .5rem;
+	margin-left: 0.5rem;
 }
 * {
 	box-sizing: border-box;
@@ -306,7 +307,7 @@ span {
 }
 .about__info {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	margin-bottom: var(--mb-3);
 }
 .about__info-title {
@@ -381,20 +382,19 @@ span.skills__subtitle {
 	-webkit-animation: progress 5s forwards;
 }
 .skills__js {
-	width: 80%;
+	width: 70%;
 	animation: progress 5s forwards;
 	-webkit-animation: progress 5s forwards;
 }
 
 .skills__css {
 	background-color: var(--first-color);
-	opacity: 0;
-	width: 90%;
+	width: 80%;
 	animation: progress 5s forwards;
 	-webkit-animation: progress 5s forwards;
 }
 .skills__sass {
-	width: 60%;
+	width: 50%;
 	animation: progress 5s forwards;
 	-webkit-animation: progress 5s forwards;
 }
@@ -515,7 +515,12 @@ span.skills__subtitle {
 	display: contents;
 	text-align: center;
 }
-
+.portfolio__link{
+	margin-top: var(--mb-0-5);
+}
+.portfolio__link a{
+	color: var(--first-color);
+}
 /**----------------------------------------------
  *                CONTACT
  *  
@@ -532,7 +537,6 @@ span.skills__subtitle {
 .contact__talk {
 	display: grid;
 	gap: 1rem;
-	margin-top: -6rem;
 }
 .contact__talk--data {
 	display: block;
@@ -673,6 +677,51 @@ span.skills__subtitle {
 	transform: rotate(-180deg);
 }
 
+/**----------------------------------------------
+ *                SCROLL UP
+ *  
+ *  
+ *  
+ *  
+ *---------------------------------------------**/
+.scrollup {
+	position: fixed;
+	right: 1rem;
+	bottom: 2rem;
+	border-radius: 30%;
+	opacity: 0.8;
+	padding: 0.2rem;
+	display: none;
+	background-color: var(--first-color-up);
+
+	-webkit-border-radius: 30%;
+	-moz-border-radius: 30%;
+	-ms-border-radius: 30%;
+	-o-border-radius: 30%;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+	z-index: 99;
+}
+
+.scrollup:hover {
+	background-color: var(--first-color);
+}
+.show-scroll {
+	bottom: 1.5rem;
+	display: block;
+	display: flex;
+}
+
+svg.puntito:active {
+	outline: 0;
+	background: none;
+	-webkit-tap-highlight-color: none;
+	/* tap-highlight-color: none; */
+}
+
 @media screen and (max-width: 480px) {
 	.about {
 		text-align: left;
@@ -684,14 +733,13 @@ span.skills__subtitle {
 	}
 	.tituloParrafo {
 		display: block;
-		/* margin-left: 0.5rem; */
 	}
 	.ptito {
 		margin: 0 1rem;
 	}
 	.carrusel .img {
 		margin-right: 7rem;
-		margin-left: .5rem;
+		margin-left: 0.5rem;
 	}
 	.section {
 		padding: 2rem 0 4rem;
@@ -704,11 +752,14 @@ span.skills__subtitle {
 		gap: 1rem;
 		margin-top: 0rem;
 	}
-	.nav__link{
-		font-size:var(--small-font-size);
+	.nav__link {
+		font-size: var(--small-font-size);
 	}
-	.nav__logo{
+	.nav__logo {
 		font-size: var(--h3-font-size);
+	}
+	.show-scroll {
+		bottom: 4rem;
 	}
 }
 @media screen and (min-width: 568px) {
@@ -729,9 +780,7 @@ span.skills__subtitle {
 @media screen and (max-width: 767px) {
 	.nav__menu {
 		background-color: var(--body-color);
-		/* border-top - left & right */
 		border-radius: 1.5rem 1.5rem 0 0;
-		/*  x=0, y = 3px */
 		box-shadow: 0 -3px 3px 1px rgba(48, 48, 48, 0.15);
 		bottom: -100%;
 		left: 0;
@@ -780,6 +829,9 @@ span.skills__subtitle {
 	}
 	.section {
 		padding: 6rem 0 2rem;
+	}
+	.section__portfolio {
+		padding: 8rem 0 8em;
 	}
 }
 @media screen and (min-width: 1024px) {

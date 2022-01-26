@@ -52,8 +52,9 @@ function scrollActive() {
 		const sectionTop = current.offsetTop - 50;
 		// devuelve el valor del atributo especificado en el elemento
 		sectionId = current.getAttribute('id');
-
+		
 		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+			console.log(sectionTop);
 			document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link');
 		} else {
 			document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link');
@@ -77,6 +78,17 @@ window.addEventListener('scroll', scrollActive);
 // 	}
 // }
 // window.addEventListener('scroll', scrollHeader);
+
+/*==================== SHOW SCROLL UP ====================*/
+function scrollUp() {
+	const scrollUp = document.getElementById('scroll-up');
+	// When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+	if (this.scrollY >= 360) scrollUp.classList.add('show-scroll');
+	else scrollUp.classList.remove('show-scroll');
+}
+window.addEventListener('scroll', scrollUp);
+
+
 
 window.addEventListener('scroll', () => {
 	const scrollNav = document.getElementById('header');
